@@ -6,27 +6,33 @@ const CardsCompra = () => {
     const arrayImagenes = [
         {
             foto: '/img/productos-cosmeticos (1) 1.png',
-            h2: 'Productos de cosmética'
+            h2: 'Productos de cosmética',
+            direccion:'/compra/cosmetica'
         },
         {
             foto: '/img/tendedero.png',
-            h2: 'Ropa'
+            h2: 'Ropa',
+            direccion: '/compra/ropa'
         },
         {
             foto: '/img/libros.png',
-            h2: 'Libros'
+            h2: 'Libros',
+            direccion: '/compra/libros'
         },
         {
             foto: '/img/juguetes-para-ninos.png',
-            h2: 'Juguetes'
+            h2: 'Juguetes',
+            direccion: '/compra/jueguetes'
         },
         {
             foto: '/img/decoracion-de-la-casa 1.png',
-            h2: 'Deco y hogar'
+            h2: 'Deco y hogar',
+            direccion:'/compra/DecoHogar'
         },
         {
             foto: '/img/quiosco.png',
-            h2: 'Ferias'
+            h2: 'Ferias',
+            direccion: '/compra/ferias'
         },
     ]
     return (
