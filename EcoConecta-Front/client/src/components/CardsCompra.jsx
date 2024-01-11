@@ -41,7 +41,7 @@ const CardsCompra = () => {
 
                 arrayImagenes.map((imagen, indice) => (
                     <div className="col-4" key={indice} >
-                        <Card foto={imagen.foto} h2={imagen.h2} />
+                        <Card foto={imagen.foto} h2={imagen.h2} direccion ={imagen.direccion} />
                     </div>
                 ))
 

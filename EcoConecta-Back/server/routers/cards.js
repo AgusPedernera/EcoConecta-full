@@ -9,10 +9,16 @@ router.get('/dona/', controller.getCardsDona);
 router.get('/dona/ropa', controller.getCardsDonaRopa);
 router.get('/dona/alimentos', controller.getCardsDonaAlimentos);
 router.get('/dona/utiles', controller.getCardsDonaUtiles);
-router.get('/dona/libros', controller.getCardsDonaUtiles);
-router.get('/dona/medicamentos', controller.getCardsDonaUtiles);
-router.get('/dona/juguetes', controller.getCardsDonaUtiles);
-router.get('')
+router.get('/dona/libros', controller.getCardsDonaLibros);
+router.get('/dona/medicamentos', controller.getCardsDonaMedicamentos);
+router.get('/dona/juguetes', controller.getCardsDonaJuguetes);
+router.get('/compra/ropa', controller.getCardsCompraRopa);
+router.get('/compra/cosmetica', controller.getCardsCompraProductos);
+router.get('/compra/decoHogar', controller.getCardsCompraDecoHogar);
+router.get('/compra/libros', controller.getCardsCompraLibros);
+router.get('/compra/ferias', controller.getCardsCompraFerias);
+router.get('/compra/juguetes', controller.getCardsCompraJuguetes);
+
 
 router.get('/:id', controller.getCard);
 

@@ -35,7 +35,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'ropa'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Ropa'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -48,7 +48,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'alimentos'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Alimentos'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -61,7 +61,137 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'utiles escolares'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Utiles'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsDonaMedicamentos() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Medicamentos'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsDonaJuguetes() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Juguetes'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsDonaLibros() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Libros'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompra() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompraRopa() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Ropa'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompraLibros() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Libros'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompraJuguetes() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Juguetes'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompraDecoHogar() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra', categoria:'deco y hogar'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompraProductos() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra', categoria:'productos de cosmética'});
+            return cards;
+        } catch (error) {
+            console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
+            return [];
+        }
+    };
+    async readCardsCompraFerias() {
+        if (! await MongoDB.connectDB()) {
+            console.error('Conexión no establecida');
+            return [];
+        }
+        try {
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Feria'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
