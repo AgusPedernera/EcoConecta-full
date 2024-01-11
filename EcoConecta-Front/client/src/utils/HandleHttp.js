@@ -10,6 +10,7 @@ export const getCardsDona = async (url) => {
         }
 
         const productos = await res.mongoose()
+        console.log('cards  productos dona',productos)
         // console.log(productos) // <- todos los productos del back
         return productos
 
@@ -30,6 +31,7 @@ export const getCardsCompra = async (url) => {
         }
 
         const productos = await res.mongoose()
+        console.log('cards productos compra', productos)
         // console.log(productos) // <- todos los productos del back
         return productos
 

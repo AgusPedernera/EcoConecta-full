@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 
 const Card = (props) => {
@@ -10,7 +9,7 @@ const Card = (props) => {
         <div>
             <article >
                 <img src={props.foto} className="snap" />
-                <NavLink to={props.direccion}>{props.h2}</NavLink>
+                <a href={props.direccion}>{props.h2}</a>
 
             </article>
         </div>

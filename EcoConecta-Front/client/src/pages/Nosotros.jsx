@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 
 const Nosotros = () => {
@@ -17,45 +17,83 @@ const Nosotros = () => {
         }
     }
     
+
+    
+
+
+    const [formData, setFormData] = useState({
+        nombre: '',
+        categoria: '',
+        tipo: '',
+        direccion: '',
+        telefono: '',
+        instagram: '',
+        paginaWeb: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+        ...formData,
+        [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aquí puedes manejar la lógica de envío o almacenamiento de los datos
+        console.log(formData);
+        // También puedes enviar los datos a un servidor o realizar otras acciones según tus necesidades
+    };
     return (
-        <div>
-            <NavBar />
-            <div id="form">
-                <article id="p-1">
-                    <h2>Sobre nosotras</h2>
-                    <img src="img/cinco.jpg" alt="" />
-                    <p>Hola! Somos un grupo de mujeres aprendiendo Programación Web Full Stack con la Fundación Pescar. Estamos desarrollando una plataforma que conecta organizaciones que aceptan donaciones en Córdoba con personas generosas y emprendedores sostenibles con aquellos que buscan consumir de manera amigable con el medio ambiente. ¡Queremos conocer todas las propuestas en Córdoba para asegurarnos de incluir a todos! ¡Ayúdanos compartiendo información valiosa para nuestra página web!</p>
-                </article>
-                <article id="p-2">
-                    <h2>Ayudanos con tu aporte</h2>
+            <div>
+                <NavBar />
+                <form onSubmit={handleSubmit}>
+        <label>
+            Nombre:
+            <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
+        </label>
+        <br />
 
-                    <form id="miFormulario">
-                        <div>
-                            <label>¿Conocés fundaciones u organizaciones de Córdoba Capital que reciba donaciones?</label><br />
-                            <input type="radio" id="pregunta1Si" name="pregunta1" value="si" onclick="mostrarPregunta(2)" /> <label for="pregunta1Si">Sí</label>
-                            <input type="radio" id="pregunta1No" name="pregunta1" value="no" onclick="mostrarPregunta(2)" /> <label for="pregunta1No">No</label>
-                        </div>
+        <label>
+            Categoría:
+            <input type="text" name="categoria" value={formData.categoria} onChange={handleChange} />
+        </label>
+        <br />
 
-                        <div id="pregunta2" class="hidden">
-                            <label for="respuesta2">Dejanos los nombres de las fundaciones u organizaciones  y si tenes algún contacto para que podamos comunicarnos con ellos/as</label><br />
-                            <input type="text" id="respuesta2" name="respuesta2" placeholder="Nombre y/o contacto" />
-                        </div>
+        <label>
+            Tipo:
+            <input type="text" name="tipo" value={formData.tipo} onChange={handleChange} />
+        </label>
+        <br />
 
-                        <div>
-                            <label>¿Conocés alguna feria o emprendedores sustentables de Córdoba Capital?</label><br />
-                            <input type="radio" id="pregunta3Si" name="pregunta3" value="si" onclick="mostrarPregunta(4)" /> <label for="pregunta3Si">Sí</label>
-                            <input type="radio" id="pregunta3No" name="pregunta3" value="no" onclick="mostrarPregunta(4)" /> <label for="pregunta3No">No</label>
-                        </div>
+        <label>
+            Dirección:
+            <input type="text" name="direccion" value={formData.direccion} onChange={handleChange} />
+        </label>
+        <br />
 
-                        <div id="pregunta4" class="hidden">
-                            <label for="respuesta4">Dejanos los nombres de ferias o emprendedores que conozcas, y si tenes algun contacto o link para que podamos conocerlos</label><br />
-                            <input type="text" id="respuesta4" name="respuesta4" placeholder="Nombre y/o contacto" />
-                        </div>
+        <label>
+            Teléfono:
+            <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} />
+        </label>
+        <br />
 
-                        <input type="submit" value="Enviar" />
-                    </form>
-                </article>
-            </div>
+        <label>
+            Instagram:
+            <input type="text" name="instagram" value={formData.instagram} onChange={handleChange} />
+        </label>
+        <br />
+
+        <label>
+            Página web:
+            <input type="text" name="paginaWeb" value={formData.paginaWeb} onChange={handleChange} />
+        </label>
+        <br />
+
+        <button type="submit">Enviar</button>
+        </form>
+  
         </div>
     )
 }
