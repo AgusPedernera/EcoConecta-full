@@ -35,7 +35,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'ropa'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Ropa'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -48,7 +48,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'alimentos'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Alimentos'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -61,7 +61,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'utiles'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Utiles'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -74,7 +74,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'medicamentos'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Medicamentos'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -87,7 +87,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'juguetes'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Juguetes'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -100,7 +100,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'dona', categoria:'libros'});
+            const cards = await cardsModel.find({tipo:'dona', categoria:'Libros'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -139,7 +139,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'compra', categoria:'libros'});
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Libros'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -152,7 +152,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'compra', categoria:'juguetes'});
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Juguetes'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
@@ -191,7 +191,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'compra', categoria:'ferias'});
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Feria'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);

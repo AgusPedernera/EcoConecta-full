@@ -89,11 +89,11 @@ const Rutas = () => {
                 element: <CardsCompraJuguete />
             },
             {
-                path: '/compra/DecoHogar',
+                path: '/compra/decoHogar',
                 element: <CardsCompraDecoHogar />
             },
             {
-                path: '/compra/Feria',
+                path: '/compra/ferias',
                 element: <CardsCompraFeria />
             },
         ]

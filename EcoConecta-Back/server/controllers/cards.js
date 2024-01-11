@@ -75,7 +75,7 @@ export default{
     getCardsCompraDecoHogar,
     getCardsCompraFerias,
     getCardsCompraLibros,
-    getCardsCompraDecoHogar,
+    getCardsCompraRopa,
     getCardsCompraProductos,
     getCardsCompraJuguetes,
     getCard
