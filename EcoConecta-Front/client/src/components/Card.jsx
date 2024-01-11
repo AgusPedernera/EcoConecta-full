@@ -10,7 +10,7 @@ const Card = (props) => {
         <div>
             <article >
                 <img src={props.foto} className="snap" />
-                <a href={props.direccion}>{props.h2}</a>
+                <NavLink to={props.direccion}>{props.h2}</NavLink>
 
             </article>
         </div>
