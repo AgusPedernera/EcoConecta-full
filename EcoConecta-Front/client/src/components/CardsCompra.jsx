@@ -6,15 +6,18 @@ const CardsCompra = () => {
     const arrayImagenes = [
         {
             foto: '/img/productos-cosmeticos (1) 1.png',
-            h2: 'Productos de cosmética'
+            h2: 'Productos de cosmética',
+            direccion: '/compra/productos-cosmetica'
         },
         {
             foto: '/img/tendedero.png',
-            h2: 'Ropa'
+            h2: 'Ropa',
+            direccion: '/compra/ruta'
         },
         {
             foto: '/img/libros.png',
-            h2: 'Libros'
+            h2: 'Libros',
+            direccion: '/compra/libros'
         },
         {
             foto: '/img/juguetes-para-ninos.png',

@@ -5,7 +5,8 @@ const CardsDona = () => {
     const arrayImagenes = [
         {
             foto: '/img/donacion-de-alimentos.png',
-            h2: 'Alimentos'
+            h2: 'Alimentos',
+            direccion:''
         },
         {
             foto: '/img/tendedero.png',

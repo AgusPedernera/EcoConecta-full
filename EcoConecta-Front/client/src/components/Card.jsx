@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+
 
 
 const Card = (props) => {
@@ -10,7 +10,7 @@ const Card = (props) => {
         <div>
             <article >
                 <img src={props.foto} className="snap" />
-                <a href="/dona/ropa">{props.h2}</a>
+                <a href={props.direccion}>{props.h2}</a>
 
             </article>
         </div>
