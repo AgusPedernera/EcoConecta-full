@@ -178,7 +178,7 @@ class CardModelMongoDB {
             return [];
         }
         try {
-            const cards = await cardsModel.find({tipo:'compra', categoria:'productos de cosmética'});
+            const cards = await cardsModel.find({tipo:'compra', categoria:'Cosmetica'});
             return cards;
         } catch (error) {
             console.error(`Se produjo un error al intentar obtener la información: ${error.message}`);
