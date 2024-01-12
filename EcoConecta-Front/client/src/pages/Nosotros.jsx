@@ -1,48 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
+import Formulario from '../components/Formulario';
+import './Nosotros.css'
 
 const Nosotros = () => {
-
     return (
-        <div>
-            <NavBar />
-            <div id="form">
-                <article id="p-1">
-                    <h2>Sobre nosotras</h2>
-                    <img src="img/cinco.jpg" alt="" />
-                    <p>Hola! Somos un grupo de mujeres aprendiendo Programación Web Full Stack con la Fundación Pescar. Estamos desarrollando una plataforma que conecta organizaciones que aceptan donaciones en Córdoba con personas generosas y emprendedores sostenibles con aquellos que buscan consumir de manera amigable con el medio ambiente. ¡Queremos conocer todas las propuestas en Córdoba para asegurarnos de incluir a todos! ¡Ayúdanos compartiendo información valiosa para nuestra página web!</p>
-                </article>
-                <article id="p-2">
-                    <h2>Ayudanos con tu aporte</h2>
-
-                    <form id="miFormulario">
-                        <div>
-                            <label>¿Conocés fundaciones u organizaciones de Córdoba Capital que reciba donaciones?</label><br />
-                            <input type="radio" id="pregunta1Si" name="pregunta1" value="si" onclick="mostrarPregunta(2)" /> <label for="pregunta1Si">Sí</label>
-                            <input type="radio" id="pregunta1No" name="pregunta1" value="no" onclick="mostrarPregunta(2)" /> <label for="pregunta1No">No</label>
-                        </div>
-
-                        <div id="pregunta2" class="hidden">
-                            <label for="respuesta2">Dejanos los nombres de las fundaciones u organizaciones  y si tenes algún contacto para que podamos comunicarnos con ellos/as</label><br />
-                            <input type="text" id="respuesta2" name="respuesta2" placeholder="Nombre y/o contacto" />
-                        </div>
-
-                        <div>
-                            <label>¿Conocés alguna feria o emprendedores sustentables de Córdoba Capital?</label><br />
-                            <input type="radio" id="pregunta3Si" name="pregunta3" value="si" onclick="mostrarPregunta(4)" /> <label for="pregunta3Si">Sí</label>
-                            <input type="radio" id="pregunta3No" name="pregunta3" value="no" onclick="mostrarPregunta(4)" /> <label for="pregunta3No">No</label>
-                        </div>
-
-                        <div id="pregunta4" class="hidden">
-                            <label for="respuesta4">Dejanos los nombres de ferias o emprendedores que conozcas, y si tenes algun contacto o link para que podamos conocerlos</label><br />
-                            <input type="text" id="respuesta4" name="respuesta4" placeholder="Nombre y/o contacto" />
-                        </div>
-
-                        <input type="submit" value="Enviar" />
-                    </form>
-                </article>
+            <div>
+                <NavBar />
+                <div className='formularioU'>
+                <div className='informacion'>
+                <h2>SOBRE NOSOTRAS</h2>
+            <img src="img/cinco.jpg" alt=""/>
+            <p>Hola! Somos un grupo de mujeres aprendiendo Programación Web Full Stack con la Fundación Pescar. Estamos desarrollando una plataforma que conecta organizaciones que aceptan donaciones en Córdoba con personas generosas y emprendedores sostenibles con aquellos que buscan consumir de manera amigable con el medio ambiente. <span>¡Queremos conocer todas las propuestas en Córdoba para asegurarnos de incluir a todos! ¡Ayúdanos compartiendo información valiosa para nuestra página web!</span></p>
+                </div>
+                <div className='infoForm'>
+                <Formulario/>
+                </div>
+                
+                </div>
+                
             </div>
-        </div>
+        
     )
 }
 
