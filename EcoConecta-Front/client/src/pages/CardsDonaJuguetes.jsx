@@ -5,8 +5,8 @@ import CardInfo from '../components/CardInfo'
 const CardsDonaJuguetes = () => {
     return (
         <div>
-            <NavBar/>
-            <CardInfo url={'http://localhost:8080/api/cards/dona/juguetes'}/>
+            <NavBar />
+                <CardInfo url={'http://localhost:8080/api/cards/dona/juguetes'} />
             cartas dona juguetes
         </div>
     )

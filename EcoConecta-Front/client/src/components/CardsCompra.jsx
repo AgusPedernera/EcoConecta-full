@@ -22,7 +22,7 @@ const CardsCompra = () => {
         {
             foto: '/img/juguetes-para-ninos.png',
             h2: 'Juguetes',
-            direccion: '/compra/jueguetes'
+            direccion: '/compra/juguetes'
         },
         {
             foto: '/img/decoracion-de-la-casa 1.png',

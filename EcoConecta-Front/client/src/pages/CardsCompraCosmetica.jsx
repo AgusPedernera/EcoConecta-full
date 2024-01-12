@@ -1,6 +1,7 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
+
 import CardInfo from '../components/CardInfo'
+import NavBar from './../components/NavBar';
 
 const CardsCompraCosmetica = () => {
     return (
