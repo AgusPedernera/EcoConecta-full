@@ -4,7 +4,7 @@ import CardInfo from '../components/CardInfo';
 
 const CardsCompraRopa = () => {
     return (
-        <div>
+        <div className='conteiner-carta'>
             <NavBar/>
             <CardInfo url={'http://localhost:8080/api/cards/compra/ropa'}/>
             cartas compra ropa

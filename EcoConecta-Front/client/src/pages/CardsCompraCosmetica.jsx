@@ -5,7 +5,7 @@ import NavBar from './../components/NavBar';
 
 const CardsCompraCosmetica = () => {
     return (
-        <div>
+        <div className='conteiner-carta'>
             <NavBar/>
             <CardInfo url={'http://localhost:8080/api/cards/compra/cosmetica'}/>
             cartas compra cosmetica
