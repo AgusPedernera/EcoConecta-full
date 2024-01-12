@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
+import Formulario from '../components/Formulario';
 
 const Nosotros = () => {
     function mostrarPregunta(numero) {
@@ -93,8 +94,9 @@ const Nosotros = () => {
 
         <button type="submit">Enviar</button>
         </form>
-  
+        <Formulario/>
         </div>
+        
     )
 }
 

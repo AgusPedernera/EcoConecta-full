@@ -29,3 +29,16 @@ header nav {
 header nav a {
     padding: 10px;
 }
+
+header img[alt="menu"] {
+    /*ocultar hamburger*/
+    display: none;
+
+}
+
+header img[alt="logo"] {
+    /*ocultar hamburger*/
+    width: 30px;
+    height: 30px;
+
+}
