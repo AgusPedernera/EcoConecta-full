@@ -1,18 +1,50 @@
 import React from 'react'
-
+import './Formulario.css'
 const Formulario = () => {
   return (
-    <form action="https://formsubmit.co/sharoncpuente@gmail.com" method="POST" >
-      <label htmlFor="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
+    <div className='formAporte'>
+    <h3>AYUDANOS SUMANDO TU APORTE</h3>
+    <form action="https://formsubmit.co/ecoconecta.oficial@gmail.com" method="POST" >
+      <div className='disp'>
+      <div className="name">
+      <label htmlFor="name"></label>
+      <input className="control" type="text" placeholder="Nombre del Lugar" name="name" id="name_input" required/>
+    </div>
+      <br />
 
-      <label htmlFor="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" required />
+      <div className="tipo">
+      <label htmlFor="tipo"></label>
+      <select className="control" placeholder="Tipo" name="tipo" id="tipo_input" required>
+        {/* <option disabled hidden selected>Tipo</option> */}
+        <option>Comprar</option>
+        <option>Donar</option>
+      </select>
+    </div>
+    </div>
+      <br />
+      <label htmlFor="direccion"></label>
+      <input className="controls" type="text" id="direccion" name="direccion" placeholder="Direccion del lugar" />
+      <br />
+      <label htmlFor="telefono"></label>
+      <input className="controls" type="tel" id="telefono" name="telefono" placeholder="Telefono de Contacto"/>
+      <br />
+      <label htmlFor="instagram"></label>
+      <input className="controls" type="text" id="instagram" name="instagram" placeholder='Instagram' />
+      <br />
+      <label htmlFor="paginaWeb"></label>
+      <input className="controls" type="url" id="paginaWeb" name="paginaWeb" placeholder='Página Web' />
+      <br />
+      <label htmlFor="comentarios"></label>
+      <textarea className="controls" id="comentarios" name="comentarios" placeholder='Comentarios'></textarea>
+      <br />
 
-      <input type="submit" value="Enviar" />
+      <input className='boton' type="submit" value="ENVIAR" />
       <input type="hidden" name="_next" value="http://localhost:5173/nosotros" />
       <input type="hidden" name='_captcha' value="false" />
+      <input type="hidden" name="_subject" value="Nuevo Aporte"/>
+
     </form>
+    </div>
   )
 }
 
