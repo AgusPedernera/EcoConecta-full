@@ -6,10 +6,10 @@ import MongoDB from '../services/DB/MongoDB.js';
 import CardModelMongoDB from './cards-mongodb.js';
 
 class CardModel {
-    static get(type) {
+    static async get(type) {
         console.log(`##### Persistencia -> ${config.PERSISTENCE_TYPE} #####`);
         if (type === TYPE_MONGODB) {
-            MongoDB.connectDB();
+            await MongoDB.connectDB();
             return new CardModelMongoDB()
         }
 
