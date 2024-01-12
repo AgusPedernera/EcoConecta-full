@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from './Card'
 import '../pages/DonaCompra.css'
-
+import './NavBar.css'
 const CardsCompra = () => {
     const arrayImagenes = [
         {
             foto: '/img/productos-cosmeticos (1) 1.png',
-            h2: 'Productos de cosmética',
+            h2: 'Cosmética',
             direccion:'/compra/cosmetica'
         },
         {
@@ -36,11 +36,11 @@ const CardsCompra = () => {
         },
     ]
     return (
-        <div>
+        <div className='cards-container'>
             {
 
                 arrayImagenes.map((imagen, indice) => (
-                    <div className="col-4" key={indice} >
+                    <div className="cards" key={indice} >
                         <Card foto={imagen.foto} h2={imagen.h2} direccion ={imagen.direccion} />
                     </div>
                 ))
