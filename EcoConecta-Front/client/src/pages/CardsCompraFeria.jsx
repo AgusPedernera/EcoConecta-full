@@ -11,7 +11,7 @@ import InfoCard from '../components/InfoCard'
 // };
 const CardsCompraFeria = () => {
     return (
-        <div>
+        <div className='conteiner-carta'>
             <NavBar/>
             <InfoCard/>
         </div>

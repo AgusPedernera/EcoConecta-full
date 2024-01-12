@@ -3,7 +3,7 @@ import NavBar from './../components/NavBar';
 
 const CardsDonaLibros = () => {
     return (
-        <div>
+        <div className='conteiner-carta'>
             <NavBar/>
             cartas dona libros
         </div>
