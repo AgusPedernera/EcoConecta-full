@@ -2,21 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 
 const Nosotros = () => {
-    function mostrarPregunta(numero) {
-        var pregunta = pregunta + numero;
-        var respuesta = document.getElementById("respuesta" + numero);
-    
-        var radioSi = document.getElementById("pregunta" + (numero - 1) + "Si");
-    
-        if (radioSi.checked) {
-            pregunta.classList.remove("hidden");
-        } else {
-            pregunta.classList.add("hidden");
-            // Limpiamos la respuesta cuando se oculta la pregunta
-            respuesta.value = "";
-        }
-    }
-    
+
     return (
         <div>
             <NavBar />
