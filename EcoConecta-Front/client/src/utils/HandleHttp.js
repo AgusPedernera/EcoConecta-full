@@ -1,3 +1,4 @@
+import getCards from '../../../../EcoConecta-Back/server/api/cards.js'
 
 export const getCardsDona = async (url) => {
 
@@ -10,7 +11,7 @@ export const getCardsDona = async (url) => {
         }
 
         const productos = await res.mongoose()
-        console.log('cards  productos dona',productos)
+        console.log('cards  productos dona',productos.getCards.getCardsDona)
         // console.log(productos) // <- todos los productos del back
         return productos
 
@@ -30,8 +31,8 @@ export const getCardsCompra = async (url) => {
             throw new Error(`No se pudo obtener todos los productos ${res.status} - ${res.statusText}`)
         }
 
-        const productos = await res.mongoose()
-        console.log('cards productos compra', productos)
+        const productos = await res.json()
+        console.log('cards productos compra', productos.getCards)
         // console.log(productos) // <- todos los productos del back
         return productos
 

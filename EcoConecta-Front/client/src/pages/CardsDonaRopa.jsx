@@ -5,7 +5,7 @@ import './CardStyles.css'
 
 const CardsDonaRopa = () => {
     return (
-        <div className='conteiner-carta'>
+        <div className='conteiner-carta'> 
             <NavBar/>
             <CardInfo url={'http://localhost:8080/api/cards/dona/ropa'}/>
             cartas dona ropa

@@ -5,7 +5,7 @@ import "../index.css"
 const NavBar = () => {
     return (
         <header>
-            <a href="/"><img src="/img/logoVerde.png" alt="logo" />EcoConectá</a>
+            <a href="/"><img src="../img/logoVerde.png" alt="logo" />EcoConectá</a>
             <nav>
                 <a href="/">Inicio</a>
                 <a href="/dona">Doná</a>
