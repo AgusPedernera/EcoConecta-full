@@ -1,15 +1,15 @@
 
-import config, {TYPE_MONGODB} from '../config.js';
+import config, { TYPE_MONGODB } from '../config.js';
 // import ProductModelMem from './products-mem.js';
 // import ProductModelFS from './products-fs.js';
 import MongoDB from '../services/DB/MongoDB.js';
 import CardModelMongoDB from './cards-mongodb.js';
 
 class CardModel {
-    static async get(type) {
+    static get(type) {
         console.log(`##### Persistencia -> ${config.PERSISTENCE_TYPE} #####`);
         if (type === TYPE_MONGODB) {
-            await MongoDB.connectDB();
+            MongoDB.connectDB();
             return new CardModelMongoDB()
         }
 
