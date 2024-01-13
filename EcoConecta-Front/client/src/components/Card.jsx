@@ -1,4 +1,5 @@
 import React from 'react'
+import './CardStyle.css'
 
 
 const Card = (props) => {
@@ -9,7 +10,7 @@ const Card = (props) => {
         <div>
             <article >
                 <img src={props.foto} className="snap" />
-                <a href={props.direccion}>{props.h2}</a>
+                <a href={props.direccion} className='linkCat'>{props.h2}</a>
 
             </article>
         </div>

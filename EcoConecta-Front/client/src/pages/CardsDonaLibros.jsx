@@ -5,11 +5,16 @@ import './CardStyles.css'
 
 const CardsDonaLibros = () => {
     return (
+        <>
+        <NavBar/>
+        <h2 className='tituloInfo'>Libros</h2>
+        <Categorias/>
         <div className='conteiner-carta'>
-            <NavBar/>
+            
             <CardInfo url={'http://localhost:8080/api/cards/dona/libros'}/>
-            cartas dona libros
+       
         </div>
+        </>
     )
 }
 

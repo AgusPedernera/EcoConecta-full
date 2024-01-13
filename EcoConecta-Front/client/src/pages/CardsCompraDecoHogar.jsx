@@ -8,10 +8,12 @@ const CardsCompraDecoHogar = () => {
     return (
         <>
             <NavBar />
+            <h2 className='tituloInfo'>Deco y Hogar</h2>
+            <Categorias/>
             <div className='conteiner-carta'>
 
                 <CardInfo url={'http://localhost:8080/api/cards/compra/decoHogar'} />
-                cartas compra deco y hogar
+                
             </div>
         </>
     )

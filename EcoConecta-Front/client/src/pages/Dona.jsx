@@ -2,6 +2,7 @@ import React from 'react'
 
 import NavBar from '../components/NavBar'
 import CardsDona from '../components/CardsDona'
+import Categorias from '../components/Categorias'
 
 const Dona = () => {
     return (
@@ -14,9 +15,10 @@ const Dona = () => {
                     distintos tipos
                 </p>
             </section>
-            <section className="hamburger">
+            {/* <Categorias/> */}
+            {/* <section className="hamburger">
                 <h2>CATEGORÍAS</h2>
-            </section>
+            </section> */}
 
             <section className="cartas">
                 <article>

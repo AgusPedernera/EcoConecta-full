@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './CardStyle.css'
+import { NavLink } from 'react-router-dom';
 
 const CardInfo = (props) => {
     const [cardsData, setCardsData] = useState([]);
@@ -23,14 +25,25 @@ const CardInfo = (props) => {
     }, []);
 
     return (
-        <div>
-            <h1>Mis Tarjetas</h1>
-            <ul>
-                {cardsData.map((card) => (
-                    <li key={card._id}>{card.nombre} - {card.categoria} - {card.direccion} - {card.instagram}</li>
+        <div className='container-carta'>
+
+            {
+                cardsData.map((card) => (
+                    <div className='cardsInfo' key={card._id}>
+                        <strong className='nombre'>{card.nombre}</strong>
+                        {/* <br /> Categoría: {card.categoria} */}
+                        <br /> Dirección: {card.direccion}
+                        <br /> Teléfono: {card.telefono}
+                        <br /> Página Web: {card.paginaWeb}
+                        <br /> Comentarios: {card.comentarios}
+                        <br /> <NavLink to={card.instagram} className='intento'>Instagram</NavLink>
+
+                        <br /><br />
+                    </div>
+
                     // Ajusta esta parte según la estructura de tus datos
-                ))}
-            </ul>
+                ))
+            }
         </div>
     );
 };
