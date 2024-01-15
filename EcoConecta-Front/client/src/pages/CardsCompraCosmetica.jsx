@@ -3,7 +3,7 @@ import React from 'react'
 import CardInfo from '../components/CardInfo'
 import NavBar from './../components/NavBar';
 import '../components/CardStyle.css'
-import Categorias from '../components/Categorias';
+import HamburgerLugares from '../components/HamburgerCompraLugares';
 
 
 const CardsCompraCosmetica = () => {
@@ -11,7 +11,7 @@ const CardsCompraCosmetica = () => {
         <>
             <NavBar />
             <h2 className='tituloInfo'>Productos de Cosmética</h2>
-            <Categorias/>
+            <HamburgerLugares />
             <div className='conteiner-carta'>
 
                 <CardInfo url={'http://localhost:8080/api/cards/compra/cosmetica'} />
