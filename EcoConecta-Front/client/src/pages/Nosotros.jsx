@@ -11,7 +11,7 @@ const Nosotros = () => {
                 <div className='informacion'>
                 <h2>SOBRE NOSOTRAS</h2>
             <img src="img/cinco.jpg" alt=""/>
-            <p>Hola! Somos un grupo de mujeres aprendiendo Programación Web Full Stack con la Fundación Pescar. Estamos desarrollando una plataforma que conecta organizaciones que aceptan donaciones en Córdoba con personas generosas y emprendedores sostenibles con aquellos que buscan consumir de manera amigable con el medio ambiente. <span>¡Queremos conocer todas las propuestas en Córdoba para asegurarnos de incluir a todos! ¡Ayúdanos compartiendo información valiosa para nuestra página web!</span></p>
+            <p>Hola! Somos un grupo de mujeres aprendiendo Programación Web Full Stack con la Fundación Pescar. Estamos desarrollando una plataforma que conecta organizaciones que aceptan donaciones en Córdoba con personas generosas y emprendedores sostenibles con aquellos que buscan consumir de manera amigable con el medio ambiente. <span className='spanNosotros'>¡Queremos conocer todas las propuestas en Córdoba para asegurarnos de incluir a todos! ¡Ayúdanos compartiendo información valiosa para nuestra página web!</span></p>
                 </div>
                 <div className='infoForm'>
                 <Formulario/>

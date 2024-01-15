@@ -11,12 +11,14 @@ const HamburgerLugares = () => {
     setMenuOpen(!isMenuOpen);
     setActivo(!activo);
   };
- 
+
   let imagenFuente = activo ? imagenActiva : imagenInactiva
 
   return (
     <nav className="HamburgerLugares">
-      <div className="nombre">Cambiar Categoría</div>
+      <div className="nombreH">CATEGORÍAS
+        <img src={imagenFuente} alt="" onClick={toggleMenu} />
+      </div>
 
       <div className={`menu ${isMenuOpen ? 'show' : ''}`}>
         <a href="/compra/cosmetica">Cosmética</a>
@@ -26,7 +28,7 @@ const HamburgerLugares = () => {
         <a href="/compra/DecoHogar">Deco y hogar</a>
         <a href="/compra/ferias">Ferias</a>
       </div>
-      <img src={imagenFuente} alt="" onClick={toggleMenu} />
+
     </nav>
   );
 };

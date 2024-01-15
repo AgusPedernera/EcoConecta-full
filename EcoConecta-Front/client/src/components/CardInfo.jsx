@@ -25,18 +25,29 @@ const CardInfo = (props) => {
     }, []);
 
     return (
+
+
         <div className='container-carta'>
 
             {
                 cardsData.map((card) => (
+
                     <div className='cardsInfo' key={card._id}>
                         <strong className='nombre'>{card.nombre}</strong>
                         {/* <br /> Categoría: {card.categoria} */}
-                        <br /> Dirección: {card.direccion}
+                        <div>
+                            {/* <br /> Dirección: {card.direccion} 
                         <br /> Teléfono: {card.telefono}
                         <br /> Página Web: {card.paginaWeb}
                         <br /> Comentarios: {card.comentarios}
-                        <br /> <NavLink to={card.instagram} className='intento'>Instagram</NavLink>
+                        <br /> <NavLink to={card.instagram} className='intento'>Instagram</NavLink> */}
+
+                            <p className='parrafo'>Direccion: <span>{card.direccion}</span></p>
+                            {/* <p>Teléfono: <span>{card.telefono}</span></p> */}
+                            <p className='parrafo'>Página Web: <NavLink to= {card.pagina_web}>{card.pagina_web}</NavLink></p>
+                            <p className='parrafo'>Comentarios: <span>{card.comentarios}</span></p>
+                            <p className='parrafo'><NavLink to={card.instagram} className='intento'>Instagram</NavLink></p>
+                        </div>
 
                         <br /><br />
                     </div>

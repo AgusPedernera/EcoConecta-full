@@ -14,10 +14,6 @@ const Compra = () => {
                     <p id="descripcion">En esta sección vas a encontrar una lista de lugares en donde vas a poder comprar artículos en
                         emprendimientos sustentables</p>
                 </section>
-                <section className="hamburger">
-                    <h2>CATEGORÍAS</h2>
-                </section>
-                {/* <!-- link para pagina inicio al costado izq superior--> */}
                 <section className="cartas">
                     <article>
                         <CardsCompra />

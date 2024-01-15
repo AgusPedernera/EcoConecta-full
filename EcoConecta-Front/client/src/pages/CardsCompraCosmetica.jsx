@@ -6,12 +6,13 @@ import '../components/CardStyle.css'
 import HamburgerLugares from '../components/HamburgerCompraLugares';
 
 
+
 const CardsCompraCosmetica = () => {
     return (
         <>
             <NavBar />
             <h2 className='tituloInfo'>Productos de Cosmética</h2>
-            <HamburgerLugares />
+            <HamburgerLugares/>
             <div className='conteiner-carta'>
 
                 <CardInfo url={'http://localhost:8080/api/cards/compra/cosmetica'} />

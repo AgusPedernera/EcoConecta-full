@@ -4,29 +4,30 @@ import imagenActiva from '../../public/img/hambu.png'
 import imagenInactiva from '../../public/img/cruz.png'
 
 const HamburgerLugares = () => {
-  const [isMenuOpen, setMenuOpen] = useState(true);
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const [activo, setActivo] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
     setActivo(!activo);
   };
- 
+
   let imagenFuente = activo ? imagenActiva : imagenInactiva
 
   return (
     <nav className="HamburgerLugares">
-      <div className="nombre">Cambiar Categoría</div>
+      <div className="nombreH">CATEGORÍAS
+        <img src={imagenFuente} alt="" onClick={toggleMenu} /></div>
 
       <div className={`menu ${isMenuOpen ? 'show' : ''}`}>
-        <a href="/compra/alimentos">Alimentos</a>
-        <a href="/compra/ropa">Ropa</a>
-        <a href="/compra/libros">Libros</a>
-        <a href="/compra/juguetes">Juguetes</a>
-        <a href="/compra/DecoHogar">Útiles escolares</a>
-        <a href="/compra/ferias">Medicamentos</a>
+        <a href="/dona/alimentos">Alimentos</a>
+        <a href="/dona/ropa">Ropa</a>
+        <a href="/dona/libros">Libros</a>
+        <a href="/dona/juguetes">Juguetes</a>
+        <a href="/dona/utiles">Útiles escolares</a>
+        <a href="/dona/medicamentos">Medicamentos</a>
       </div>
-      <img src={imagenFuente} alt="" onClick={toggleMenu} />
+
     </nav>
   );
 };
