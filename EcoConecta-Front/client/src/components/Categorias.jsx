@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import imagenActiva from '../../public/img/hambu.png'
-import imagenInactiva from '../../public/img/cruz.png'
-import CategoriasCompra from './CategoriasCompra';
+// import React, { useState } from 'react'
+// import imagenActiva from '../../public/img/hambu.png'
+// import imagenInactiva from '../../public/img/cruz.png'
+// import CategoriasCompra from './CategoriasCompra';
 
 
 

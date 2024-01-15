@@ -11,7 +11,7 @@ const CardsCompraFeria = () => {
         <>
             <NavBar />
             <h2 className='tituloInfo'>Ferias</h2>
-            <Categorias/>
+            
             <div className='conteiner-carta'>
 
                 <CardInfo url={'http://localhost:8080/api/cards/compra/ferias'} />

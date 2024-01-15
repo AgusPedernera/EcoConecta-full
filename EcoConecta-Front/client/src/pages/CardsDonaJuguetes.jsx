@@ -8,7 +8,7 @@ const CardsDonaJuguetes = () => {
         <>
             <NavBar />
             <h2 className='tituloInfo'>Juguetes</h2>
-            <Categorias/>
+           
             <div className='conteiner-carta'>
 
                 <CardInfo url={'http://localhost:8080/api/cards/dona/juguetes'} />
