@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './HamburgerLugares.css';
-import imagenActiva from '../../public/img/hambu.png'
-import imagenInactiva from '../../public/img/cruz.png'
+import imagenActiva from '/img/hambu.png'
+import imagenInactiva from '/img/cruz.png'
 
 const HamburgerLugares = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
